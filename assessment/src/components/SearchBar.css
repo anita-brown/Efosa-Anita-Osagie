@@ -30,3 +30,24 @@
 input:focus {
     outline: none;
 }
+.search-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+    font-weight: 700;
+    color: white;
+}
+.input-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23rem;
+    height: 3rem;
+    background-color: #ffff;
+    margin-top: 2rem;
+    color: black;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.3rem;
+    border: none;
+}

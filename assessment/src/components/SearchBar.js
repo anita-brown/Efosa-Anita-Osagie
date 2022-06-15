@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 import { BsSearch } from "react-icons/bs";
 import { a } from "../data";
+import { cleanInputValue, pathGet } from "../helper";
 
 const SearchBar = ({ placeholder }) => {
-    
+
   const [inputValue, setInputValue] = useState("");
   const [path, setPath] = useState("");
   const [display, setDisplay] = useState(false);
