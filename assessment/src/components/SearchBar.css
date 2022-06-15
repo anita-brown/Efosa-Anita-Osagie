@@ -1,7 +1,8 @@
+
 .search {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 
 }
 .search-input {
@@ -41,6 +42,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     width: 23rem;
     height: 3rem;
     background-color: #ffff;

@@ -5,7 +5,6 @@ import { a } from "../data";
 import { cleanInputValue, pathGet } from "../helper";
 
 const SearchBar = ({ placeholder }) => {
-
   const [inputValue, setInputValue] = useState("");
   const [path, setPath] = useState("");
   const [display, setDisplay] = useState(false);
@@ -14,7 +13,7 @@ const SearchBar = ({ placeholder }) => {
     if (path === "") {
       return " ";
     } else if (path === undefined) {
-      return "No path found";
+      return "No path found!";
     } else {
       return path;
     }
@@ -38,23 +37,24 @@ const SearchBar = ({ placeholder }) => {
     setDisplay(false);
   };
   return (
-    <div className="search">
-      <div className="search-input">
-        <input type="search" placeholder={placeholder} value={inputValue} onChange={handleChange} />
-        <div className="search-icon" onClick={handleClick}>
-          <BsSearch />
+
+      <div className="search">
+        <div className="search-input">
+          <input type="search" placeholder={placeholder} value={inputValue} onChange={handleChange} />
+          <div className="search-icon" onClick={handleClick}>
+            <BsSearch />
+          </div>
         </div>
+        {display ? (
+          <div className="input-result">
+            <p>
+              <em>{value()}</em>
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
-      {display ? (
-        <div className="input-result">
-          <p>
-            <em>{value()}</em>
-          </p>
-        </div>
-      ) : (
-        ""
-      )}
-    </div>
   );
 };
 
