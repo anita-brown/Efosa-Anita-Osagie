@@ -1,10 +1,10 @@
-const cleanInputValue = (inputValue) => {
+export const cleanInputValue = (inputValue) => {
   let newInput = inputValue.toLowerCase();
   const result = newInput.charAt(0).toUpperCase() + newInput.slice(1);
   return result;
 };
 
-const pathGet = (a, query) => {
+export const pathGet = (a, query) => {
   const findKeyInObj = (val) => {
     const result = {};
     for (const key in val) {
@@ -27,7 +27,5 @@ const pathGet = (a, query) => {
   }
 };
 
-export default {
-  cleanInputValue,
-  pathGet,
-};
+
+
