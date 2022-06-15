@@ -1,0 +1,16 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+}
+.search-input {
+    width: 30rem;
+    height: 3.2rem;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.665);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+
+}
